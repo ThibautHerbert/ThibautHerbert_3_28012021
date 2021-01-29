@@ -89,6 +89,10 @@
     	background-color: #b662dc;
     	border-radius: 30px;
         margin-bottom: 70px;
+        color: white; /*n'affiche pas le texte*/
+    }
+    ::-webkit-input-placeholder{
+        
     }
     								/*  STEPS FONCTIONNEMENT  */
     .Steps{
@@ -123,8 +127,14 @@
         position: absolute;
         left: 50px;
     }
+    .steps--icons .fas{
+        color: grey;
+    }
     .Li--modified{
     	background-color: #f5edff;
+    }
+    .steps--icons .fas .fa-store{
+        color: var(--Color-primary);
     }
     								/*  MAIN CONTENT  */
 	section{
@@ -227,7 +237,7 @@
     footer nav i{
     	color:white;
     	margin-right: 20px;
-    	width: 50px;
+    	width: 50px; /*pas idéal, besoin de diminuer la taille des icones*/
     }
     nav a{
     	text-decoration: none;
