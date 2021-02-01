@@ -1,0 +1,41 @@
+footer{
+    background-color: #353535;
+    width: 100%;
+    padding: 45px;
+    padding-bottom: 60px;
+
+    h2{
+        font-family: Shrikhand;
+        color: white;
+        font-weight: normal;
+        font-size: 1.2em;
+    }
+    img{
+        height: 25px;
+        color: white;
+        margin-bottom: 10px;
+    }   
+    nav{
+        display: flex;
+        flex-direction: column;
+   
+        span{
+            font-size: 1em
+        } 
+        i{
+            color:white;
+            margin-right: 20px;
+            width: 50px; /*pas idéal, besoin de diminuer la taille des icones*/
+        }
+        a{
+            text-decoration: none;
+            color:white;
+            font-size: .8em
+        }
+        span,
+        a{
+            margin-top: 20px;
+        }
+    }
+}
+    
