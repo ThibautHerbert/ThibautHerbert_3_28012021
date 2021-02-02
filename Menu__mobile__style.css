@@ -22,6 +22,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background: #f6f6f6;
+}
+
 /*  IMAGES  */
 .img__top {
   height: 240px;
@@ -47,8 +51,8 @@ header img {
 footer {
   background-color: #353535;
   width: 100%;
-  padding: 45px;
-  padding-bottom: 60px;
+  padding: 35px;
+  padding-bottom: 50px;
 }
 footer h2 {
   font-family: Shrikhand;
@@ -56,21 +60,16 @@ footer h2 {
   font-weight: normal;
   font-size: 1.2em;
 }
-footer img {
-  height: 25px;
-  color: white;
-  margin-bottom: 10px;
-}
 footer nav {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 footer nav span {
   font-size: 1em;
 }
 footer nav i {
   color: white;
-  margin-right: 20px;
   width: 50px;
   /*pas idéal, besoin de diminuer la taille des icones*/
 }
@@ -81,7 +80,7 @@ footer nav a {
 }
 footer nav span,
 footer nav a {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .main-container {
@@ -123,36 +122,50 @@ footer nav a {
   justify-content: space-between;
 }
 
+.Items__choice__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .Items__choice__text h3 {
-  font-size: 0.5em;
+  font-size: 0.6em;
 }
 .Items__choice__text h4 {
-  font-size: 0.4em;
+  font-size: 0.5em;
   font-weight: lighter;
 }
 
+.Items__choice__price {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .Items__choice__price p {
-  font-size: 0.4em;
+  font-size: 0.5em;
   font-weight: bold;
+}
+.Items__choice__price span:active {
+  background-color: #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .fa-check-circle {
-  background-color: #99E2D0;
-  border-radius: 0px 20px 20px 0px;
   color: white;
-  padding: 25px;
-  width: 60px;
-  height: 60px;
 }
 
 input {
-  background-color: #9656DC;
+  background: linear-gradient(to bottom right, #FF79DA 10%, #9656DC 70%, #9656DC 50%);
   color: white;
-  padding: 15px;
-  margin: 30px auto 60px auto;
-  text-align: center;
-  /* vérifier fonctionnement*/
-  width: 100%;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 60px;
+  margin: 30px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=Menu__mobile__style.css.map */

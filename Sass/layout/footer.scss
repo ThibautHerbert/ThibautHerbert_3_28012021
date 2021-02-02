@@ -1,8 +1,8 @@
 footer{
     background-color: #353535;
     width: 100%;
-    padding: 45px;
-    padding-bottom: 60px;
+    padding: 35px;
+    padding-bottom: 50px;
 
     h2{
         font-family: Shrikhand;
@@ -10,21 +10,18 @@ footer{
         font-weight: normal;
         font-size: 1.2em;
     }
-    img{
-        height: 25px;
-        color: white;
-        margin-bottom: 10px;
-    }   
+   
     nav{
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
    
         span{
             font-size: 1em
         } 
         i{
             color:white;
-            margin-right: 20px;
+            
             width: 50px; /*pas idéal, besoin de diminuer la taille des icones*/
         }
         a{
@@ -34,7 +31,7 @@ footer{
         }
         span,
         a{
-            margin-top: 20px;
+            margin-top: 10px;
         }
     }
 }

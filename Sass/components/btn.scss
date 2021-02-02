@@ -1,8 +1,11 @@
 input{
-    background-color: $Color-primary;
+    background: linear-gradient(to bottom right, $Color-secondary 10%, $Color-primary 70%, $Color-primary 50%);
     color: white;
-    padding: 15px;
-    margin: 30px auto 60px auto;
-    text-align: center; /* vérifier fonctionnement*/
-    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 60px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
 }

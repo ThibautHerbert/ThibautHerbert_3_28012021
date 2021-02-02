@@ -22,28 +22,40 @@
     justify-content: space-between;
 }
 .Items__choice__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     h3{
-        font-size: .5em;
+        font-size: .6em;
     }
     h4{
-        font-size: .4em;
+        font-size: .5em;
         font-weight: lighter;
     }
 }
 .Items__choice__price{
+    display: flex;
+    flex-direction: column-reverse;
     p{
-        font-size: .4em;
+        font-size: .5em;
         font-weight: bold;
+    }
+    span:active{
+        background-color: $Color-tertiary;
+        border-radius: 0px 20px 20px 0px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+       
     }
 }
 
 .fa-check-circle{
-    background-color: $Color-tertiary;
-    border-radius: 0px 20px 20px 0px;
+    
     color: white;
-    padding: 25px;
-    width: 60px;
-    height:60px;
+    
+    
     
 }
 

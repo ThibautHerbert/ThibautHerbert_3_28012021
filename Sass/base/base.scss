@@ -18,7 +18,10 @@
     box-sizing: border-box;
     font-size: 1.1em;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;   
+}
+body{
+    background: $Color-main;
 }
                                         /*  IMAGES  */
 .img__top{

@@ -84,12 +84,13 @@ body{
         padding-bottom: 50px;
     }
     .Explore input{
-    	width: 60%;
-    	height: 50px;
-    	background-color: #b662dc;
-    	border-radius: 30px;
+    	
+    	background: linear-gradient(to bottom right, var(--Color-secondary) 10%, var(--Color-primary) 70%, var(--Color-primary) 50%);
+        border-radius: 40px;
+        border:none;
         margin-bottom: 70px;
-        color: white; /*n'affiche pas le texte*/
+        padding: 20px 40px;
+        color: white;
     }
     ::-webkit-input-placeholder{
         
