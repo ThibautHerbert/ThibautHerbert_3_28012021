@@ -34,6 +34,10 @@ body {
   object-position: 50% 90%;
 }
 
+.--position {
+  object-position: 50% 45%;
+}
+
 header {
   padding: 15px;
   display: flex;
@@ -128,10 +132,10 @@ footer nav a {
   justify-content: space-around;
 }
 .Items__choice__text h3 {
-  font-size: 0.6em;
+  font-size: 0.5em;
 }
 .Items__choice__text h4 {
-  font-size: 0.5em;
+  font-size: 0.45em;
   font-weight: lighter;
 }
 
