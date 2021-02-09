@@ -13,33 +13,37 @@
 		<img src="images/logo/ohmyfood.png" alt="logo Oh My Food">
 	</header>
 	<div class="Localisation">
-		<i class="fas fa-map-marker-alt" alt="icone localisation"></i>
+		<i class="fas fa-map-marker-alt"></i>
         <input type="search" name="city" id="city" placeholder="Paris, Belleville">
 	</div>
-	<div class="Explore">
-		<h1 class="Explore__Title">Réservez le menu qui vous convient</h1>
-		<p class="Explore__Text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-		<input type="button" name="Explore" class="Explore__Button" value="Explorer nos restaurants">
-	</div>
-	<div class="Steps">
-		<h2>Fonctionnement</h2>
-			<div class="steps--icons">
-				<span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
-			<div class="steps--icons">
-				<span>2</span><i class="fas fa-list-ul"></i>Composez votre menu</div>
-			<div class="steps--icons Li--modified">
-				<span>3</span><i class="fas fa-store" id="modified"></i>Dégustez au restaurant</div>
+	<div class="top-block">
+		<div class="Explore">
+			<h1 class="Explore__Title">Réservez le menu qui vous convient</h1>
+			<p class="Explore__Text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+			<input type="button" name="Explore" class="Explore__Button" value="Explorer nos restaurants">
+		</div>
+		<div class="Steps">
+			<h2>Fonctionnement</h2>
+				<div class="steps--icons">
+					<span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</div>
+				<div class="steps--icons">
+					<span>2</span><i class="fas fa-list-ul"></i>Composez votre menu</div>
+				<div class="steps--icons Li--modified">
+					<span>3</span><i class="fas fa-store" id="modified"></i>Dégustez au restaurant</div>
+		</div>
 	</div>
 	<section class="Restaurants-Block">
 		<h2>Restaurants</h2>
-		<div>
+		<div class="Restaurants-Block__container">
 			<a href="M3_index.html"><article class="Restaurants-Block__item">
 				<img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo La palette du goût" class="">
-				<h3 class="Restaurants-Block__item__Title caps">La palette du goût</h3>
-				<h4 class="Restaurants-Block__item__Place caps">Ménilmontant</h4>
-				<i class="far fa-heart basic"></i>
-				<i class="fas fa-heart colored"></i>
-				<span>Nouveau</span>
+				<div class="Restaurants-Block__item__body">
+					<h3 class="Restaurants-Block__item__Title caps">La palette du goût</h3>
+					<h4 class="Restaurants-Block__item__Place caps">Ménilmontant</h4>
+					<i class="far fa-heart basic"></i>
+					<i class="fas fa-heart colored"></i>
+					<span>Nouveau</span>
+				</div>
 			</article></a>
 			<a href="M2_index.html"><article class="Restaurants-Block__item">
 				<img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo La note enchantée" class="--position">

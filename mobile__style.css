@@ -12,7 +12,7 @@
 }
 
 .FontH2{
-    font-size: ;
+   
 }
 body{
     --Color-primary:#9656DC;
@@ -226,10 +226,15 @@ body{
         position: absolute;
 		right: 40px;
         bottom: 30px;
-        color: white;
-        transform: scale(0.3);
-        transition: all 1000ms;
-    }/*
+        color: black;
+        transform: scale(1);
+        transition: all 800ms;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        background: linear-gradient(90deg, red, blue);
+    }
+    /*
     .fa-w-16{
         width: 50px;
         color: red;
@@ -247,9 +252,10 @@ body{
     }*/
     .colored:hover{
         z-index:2;
-        color: var(--Color-primary);
+        /*color: var(--Color-primary);*/
         /*transition: color 1280ms ; pas besoin grace au all*/
         transform: scale(1);
+        
     }
 	article span{               /* encadré nouveau */
 		position: absolute;

@@ -1,0 +1,75 @@
+.Items{
+    .border{
+        border-bottom: $Color-tertiary solid 3px;
+        width: 15%;
+
+        h2{
+        text-transform: uppercase;
+        font-size: .9em;
+        font-weight: lighter;
+        padding-bottom: 5px;
+        padding-top: 35px;
+        color: #353535;
+        }
+    }
+}
+.Items__choice{
+    border-radius: 20px;
+    background-color: white;
+    margin: 15px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.Items__choice__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    h3{
+        font-size: .5em;
+    }
+    h4{
+        font-size: .45em;
+        font-weight: lighter;
+    }
+}
+.Items__choice{
+    cursor: pointer;
+    &:hover span:hover{
+            background-color: $Color-tertiary;
+            border-radius: 0px 20px 20px 0px;
+            transform:scale(1);
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+
+.Items__choice__price{
+    display: flex;
+    flex-direction: column-reverse;
+    p{
+        font-size: .5em;
+        font-weight: bold;
+    }
+    span{
+        transition: all 500ms ease-in-out;
+        transform: scale(0.3);
+        .fa-check-circle{
+            color: white;
+            padding: 20px;
+        }
+    }
+    
+    /*span:hover ~ p{               /*pourquoi <p> ne bouge pas !!!! ? */
+       /* flex-direction: row-reverse;
+        background-color: red;
+        color: red;
+        font-size: 1em;
+        position: relative;
+        right: 100px;              
+    }*/
+}
+
+
+

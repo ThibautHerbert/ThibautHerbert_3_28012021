@@ -1,0 +1,14 @@
+.Purchase__Button{
+    background: linear-gradient(to bottom right, $Color-secondary 10%, $Color-primary 70%, $Color-primary 50%);
+    color: white;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 60px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
+}
+.Purchase__Button:hover{
+    background: lighten($Color-secondary , $amount: 5);
+}

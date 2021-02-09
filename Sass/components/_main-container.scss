@@ -1,0 +1,49 @@
+.main-container{
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: $Color-main;
+    position: relative;
+    bottom: 50px;
+    
+}
+.main-container__Title{
+    display: flex;
+    justify-content: space-between;
+    
+    h1{
+        font-family:'Shrikhand';
+    }
+    .initial-heart{
+        background: $Color-primary;
+        background-clip: padding-box;
+
+    }
+    .favorite{
+        background: $Color-secondary;
+        background-clip: content-box;
+        color: transparent;
+    }
+    /*.favorite{
+        
+        position: relative;
+        z-index: 1;
+        color:$Color-main;
+        &:hover{
+            background: radial-gradient(circle, lighten($Color-secondary, 5)0%, darken($Color-primary,10)100%);
+            background-clip:content-box;
+            opacity: 2;
+            transition: opacity 1500ms;
+        }
+    }
+    .initial-heart{
+        position: absolute;
+        right:20px;
+        z-index: 2;
+        color: red;
+        &:hover{
+        z-index: -2;
+        color:blue;
+    }
+    }*/
+}
