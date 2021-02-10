@@ -1,0 +1,51 @@
+@media screen and (min-width: 767px){
+    
+    
+    .top-block{
+        display: flex;
+    }
+                                        /*  EXPLORE  */ 
+    .Explore{
+        
+    }
+                                        /*  STEPS FONCTIONNEMENT  */
+    .Steps{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        position: relative;
+    }
+
+                                        .steps--icons{                  /*à renommer correctement*/
+        padding: 30px 50px 30px 20px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 50px;
+        width: 50%;
+        margin: 10px auto;
+        position: relative;
+    }
+    .steps--icons .fas{
+        padding-right: 20px;
+    }
+                                        /*  MAIN CONTENT  */
+    section .Restaurants-Block__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 80%;
+    }
+    section .Restaurants-Block__container article{
+        flex-direction: row;
+        width: 400px;
+        flex-wrap: wrap;
+    }
+    .Restaurants-Block__item__body{
+        margin-left: 0;
+    }
+}

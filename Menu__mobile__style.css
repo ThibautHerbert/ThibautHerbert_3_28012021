@@ -1,4 +1,15 @@
 @charset "UTF-8";
+@keyframes landing-menu {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*  FONTS  */
 @font-face {
   font-family: "Roboto";
@@ -126,13 +137,29 @@ footer nav a {
   font-family: "Shrikhand";
 }
 .main-container__Title .initial-heart {
-  background: #9656DC;
-  background-clip: padding-box;
+  z-index: 1;
+  transition: all 700ms ease-in-out;
+  transition-delay: 400ms;
+  scale: 0.9;
+}
+.main-container__Title .initial-heart:hover {
+  color: transparent;
+  scale: 0.2;
 }
 .main-container__Title .favorite {
-  background: #FF79DA;
-  background-clip: content-box;
   color: transparent;
+  transition: all 400ms ease-in-out;
+  transform: scale(0.2);
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+.main-container__Title .favorite:hover {
+  background: linear-gradient(to bottom right, #FF79DA 10%, #9656DC 70%, #9656DC 50%);
+  background-clip: text;
+  color: transparent;
+  transform: scale(1);
 }
 
 .Items .border {
@@ -148,43 +175,62 @@ footer nav a {
   color: #353535;
 }
 
+.first {
+  animation: landing-menu 0.5s 1s ease-in 1;
+}
+
+.second {
+  animation: landing-menu 1s 1s ease-in 1;
+}
+
+.third {
+  animation: landing-menu 1.5s 1s ease-in 1;
+}
+
+.fourth {
+  animation: landing-menu 2s 1s ease-in 1;
+}
+
+.fifth {
+  animation: landing-menu 2.5s 1s ease-in 1;
+}
+
+.sixth {
+  animation: landing-menu 3s 1s ease-in 1;
+}
+
+.seventh {
+  animation: landing-menu 3.5s 1s ease-in 1;
+}
+
+.eighth {
+  animation: landing-menu 4.5s 1s ease-in 1;
+}
+
+.nineth {
+  animation: landing-menu 5s 1s ease-in 1;
+}
+
 .Items__choice {
   border-radius: 20px;
   background-color: white;
   margin: 15px auto;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
-}
-
-.Items__choice__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.Items__choice__text h3 {
-  font-size: 0.5em;
-}
-.Items__choice__text h4 {
-  font-size: 0.45em;
-  font-weight: lighter;
-}
-
-.Items__choice {
   cursor: pointer;
-}
-.Items__choice:hover span:hover {
-  background-color: #99E2D0;
-  border-radius: 0px 20px 20px 0px;
-  transform: scale(1);
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.Items__choice__price {
-  display: flex;
-  flex-direction: column-reverse;
+  /*:hover > .Items__choice__animation{
+      width: 50px;
+      background: brown;
+  }                               marche pas donc écrit plus bas*/
+  /*.Items__choice:hover > .Items__choice__animation {
+      width: 50px;
+      border: violet 3px solid;
+  }   
+  .Items__choice:hover{
+      color: turquoise;
+      background-color: black;
+      border: violet 3px solid;
+  }*/
   /*span:hover ~ p{               /*pourquoi <p> ne bouge pas !!!! ? */
   /* flex-direction: row-reverse;
       background-color: red;
@@ -194,17 +240,63 @@ footer nav a {
       right: 100px;              
   }*/
 }
+.Items__choice__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+.Items__choice__text h3 {
+  font-size: 0.5em;
+}
+.Items__choice__text h4 {
+  font-size: 0.45em;
+  font-weight: lighter;
+}
+.Items__choice__price {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  flex-grow: 4;
+  margin-right: 20px;
+  padding: 10px;
+}
 .Items__choice__price p {
   font-size: 0.5em;
   font-weight: bold;
 }
-.Items__choice__price span {
-  transition: all 500ms ease-in-out;
-  transform: scale(0.3);
+.Items__choice__animation {
+  transition: width 700ms ease-in-out, color 300ms ease-in-out, background 300ms ease-in;
+  transition-delay: 0, 700ms, 300ms;
+  width: 0px;
+  /*span:hover{
+      background-color: $Color-tertiary;
+      border-radius: 0px 20px 20px 0px;
+      transform:scale(1);
+      display: flex;
+      justify-content: center;
+      width: 50px;
+  }*/
 }
-.Items__choice__price span .fa-check-circle {
+.Items__choice__animation span {
+  background: #99E2D0;
+}
+.Items__choice__animation .fa-check-circle {
+  width: 0;
+  color: transparent;
+}
+
+.Items__choice:hover > .Items__choice__animation {
+  width: 50px;
+  background: #99E2D0;
+  background-clip: text;
   color: white;
-  padding: 20px;
+  border-radius: 0px 20px 20px 0px;
+}
+.Items__choice:hover > .Items__choice__animation .fa-check-circle {
+  color: white;
+  padding-left: 5px;
+  padding-top: 10px;
 }
 
 .Purchase__Button {

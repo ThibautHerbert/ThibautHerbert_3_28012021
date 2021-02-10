@@ -15,14 +15,30 @@
         font-family:'Shrikhand';
     }
     .initial-heart{
-        background: $Color-primary;
-        background-clip: padding-box;
-
+        z-index: 1;
+        transition: all 700ms ease-in-out;
+        transition-delay: 400ms;
+        scale: (.9);
+    }
+    .initial-heart:hover{
+        color: transparent;
+        scale: (.2);
     }
     .favorite{
-        background: $Color-secondary;
-        background-clip: content-box;
+        color:transparent;
+        transition: all 400ms ease-in-out;
+        transform: scale(0.2);
+        position: absolute;
+        right: 20px;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .favorite:hover{
+        background: linear-gradient(to bottom right, $Color-secondary 10%, $Color-primary 70%, $Color-primary 50%);
+        background-clip: text;
         color: transparent;
+        transform: scale(1);
+        
     }
     /*.favorite{
         

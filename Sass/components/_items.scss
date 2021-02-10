@@ -13,54 +13,102 @@
         }
     }
 }
+.first{
+    animation: landing-menu .5s 1s ease-in 1 ;
+}
+.second{
+    animation: landing-menu 1s 1s ease-in 1 ;
+}
+.third{
+    animation: landing-menu 1.5s 1s ease-in 1 ;
+}
+.fourth{
+    animation: landing-menu 2s 1s ease-in 1 ;
+}
+.fifth{
+    animation: landing-menu 2.5s 1s ease-in 1 ;
+}
+.sixth{
+    animation: landing-menu 3s 1s ease-in 1 ;
+}
+.seventh{
+    animation: landing-menu 3.5s 1s ease-in 1 ;
+}
+.eighth{
+    animation: landing-menu 4.5s 1s ease-in 1 ;
+}
+.nineth{
+    animation: landing-menu 5s 1s ease-in 1 ;
+}
 .Items__choice{
+    
     border-radius: 20px;
     background-color: white;
     margin: 15px auto;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
-}
-.Items__choice__text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    h3{
-        font-size: .5em;
-    }
-    h4{
-        font-size: .45em;
-        font-weight: lighter;
-    }
-}
-.Items__choice{
     cursor: pointer;
-    &:hover span:hover{
-            background-color: $Color-tertiary;
-            border-radius: 0px 20px 20px 0px;
-            transform:scale(1);
-            display: flex;
-            justify-content: center;
-            cursor: pointer;
+    /*:hover > .Items__choice__animation{
+        width: 50px;
+        background: brown;
+    }                               marche pas donc écrit plus bas*/
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+            h3{
+                font-size: .5em;
+            }
+            h4{
+                font-size: .45em;
+                font-weight: lighter;
+            }
+    }
+    &__price{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        flex-grow: 4;
+        margin-right: 20px;
+        padding: 10px;
+        p{
+            font-size: .5em;
+            font-weight: bold;
         }
     }
-
-.Items__choice__price{
-    display: flex;
-    flex-direction: column-reverse;
-    p{
-        font-size: .5em;
-        font-weight: bold;
-    }
-    span{
-        transition: all 500ms ease-in-out;
-        transform: scale(0.3);
+    &__animation{
+        transition: width 700ms ease-in-out, color 300ms ease-in-out, background 300ms ease-in;
+        transition-delay: 0, 700ms, 300ms;
+        width: 0px;
+        
+        span{
+            background: $Color-tertiary;
+        }
         .fa-check-circle{
-            color: white;
-            padding: 20px;
-        }
+            width: 0;
+            color: transparent;
     }
-    
+    /*span:hover{
+        background-color: $Color-tertiary;
+        border-radius: 0px 20px 20px 0px;
+        transform:scale(1);
+        display: flex;
+        justify-content: center;
+        width: 50px;
+    }*/
+   
+        
+}
+/*.Items__choice:hover > .Items__choice__animation {
+    width: 50px;
+    border: violet 3px solid;
+}   
+.Items__choice:hover{
+    color: turquoise;
+    background-color: black;
+    border: violet 3px solid;
+}*/
     /*span:hover ~ p{               /*pourquoi <p> ne bouge pas !!!! ? */
        /* flex-direction: row-reverse;
         background-color: red;
@@ -70,6 +118,21 @@
         right: 100px;              
     }*/
 }
-
+.Items__choice:hover > .Items__choice__animation{
+    width: 50px;
+    background: $Color-tertiary;
+    background-clip: text;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    span{
+       
+    }
+    .fa-check-circle{
+        color: white;
+        padding-left: 5px;
+        padding-top: 10px;
+        
+}
+}
 
 

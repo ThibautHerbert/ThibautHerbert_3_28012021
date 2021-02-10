@@ -129,6 +129,9 @@ body{
         font-size: .8em;
         font-weight: bold;
     }
+    .steps--icons:hover{ 
+        background-color: #f5edff;
+    }
     .steps--icons span{
         border-radius: 50px;
         height: 25px;
