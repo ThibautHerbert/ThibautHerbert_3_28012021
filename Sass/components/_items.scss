@@ -64,6 +64,13 @@
                 font-size: .45em;
                 font-weight: lighter;
             }
+            h3,
+            h4{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 250px;
+            }
     }
     &__price{
         display: flex;
@@ -82,12 +89,19 @@
         transition-delay: 0, 700ms, 300ms;
         width: 0px;
         
+        
         span{
             background: $Color-tertiary;
+            
         }
         .fa-check-circle{
             width: 0;
             color: transparent;
+            transition: transform 1s ease-out;
+            transform-origin: center;
+            /*animation: rotate 2s 0 ease-out; problème marche pas*/
+           
+            
     }
     /*span:hover{
         background-color: $Color-tertiary;
@@ -100,23 +114,7 @@
    
         
 }
-/*.Items__choice:hover > .Items__choice__animation {
-    width: 50px;
-    border: violet 3px solid;
-}   
-.Items__choice:hover{
-    color: turquoise;
-    background-color: black;
-    border: violet 3px solid;
-}*/
-    /*span:hover ~ p{               /*pourquoi <p> ne bouge pas !!!! ? */
-       /* flex-direction: row-reverse;
-        background-color: red;
-        color: red;
-        font-size: 1em;
-        position: relative;
-        right: 100px;              
-    }*/
+
 }
 .Items__choice:hover > .Items__choice__animation{
     width: 50px;
@@ -125,12 +123,14 @@
     color: white;
     border-radius: 0px 20px 20px 0px;
     span{
-       
+        
     }
     .fa-check-circle{
         color: white;
         padding-left: 5px;
         padding-top: 10px;
+        transform:rotate(360deg);
+        
         
 }
 }

@@ -8,7 +8,9 @@
     display: flex;
     justify-content: center;
     font-size: .9em;
+    box-shadow: 3px 5px 5px grey;
 }
 .Purchase__Button:hover{
-    background: lighten($Color-secondary , $amount: 5);
+    background: lighten($Color-secondary , $amount: 1);
+    box-shadow: 1px 3px 5px#353535;
 }

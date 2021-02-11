@@ -14,13 +14,13 @@
     h1{
         font-family:'Shrikhand';
     }
-    .initial-heart{
+    .basic{
         z-index: 1;
         transition: all 700ms ease-in-out;
         transition-delay: 400ms;
         scale: (.9);
     }
-    .initial-heart:hover{
+    .basic:hover{
         color: transparent;
         scale: (.2);
     }

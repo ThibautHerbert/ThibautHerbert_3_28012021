@@ -27,7 +27,14 @@ footer{
         a{
             text-decoration: none;
             color:white;
-            font-size: .8em
+            font-size: .8em;
+            &:hover{
+                background: linear-gradient(to bottom right, $Color-secondary 10%, $Color-primary 70%, $Color-primary 50%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color:transparent;
+                color: transparent;
+            }
         }
         span,
         a{
