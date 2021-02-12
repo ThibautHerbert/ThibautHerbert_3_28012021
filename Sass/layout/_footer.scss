@@ -8,26 +8,21 @@ footer{
         font-family: Shrikhand;
         color: white;
         font-weight: normal;
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
    
     nav{
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-   
-        span{
-            font-size: 1em
-        } 
         i{
             color:white;
-            
             width: 50px; /*pas idéal, besoin de diminuer la taille des icones*/
         }
         a{
             text-decoration: none;
             color:white;
-            font-size: .8em;
+            font-size: 1.2em;
             &:hover{
                 background: linear-gradient(to bottom right, $Color-secondary 10%, $Color-primary 70%, $Color-primary 50%);
                 background-clip: text;

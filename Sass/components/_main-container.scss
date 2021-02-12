@@ -14,6 +14,9 @@
     h1{
         font-family:'Shrikhand';
     }
+    .fa-heart{
+        font-size: 1.6rem;
+    }
     .basic{
         z-index: 1;
         transition: all 700ms ease-in-out;
@@ -43,26 +46,4 @@
         transform: scale(1); 
         }
     }
-    /*.favorite{
-        
-        position: relative;
-        z-index: 1;
-        color:$Color-main;
-        &:hover{
-            background: radial-gradient(circle, lighten($Color-secondary, 5)0%, darken($Color-primary,10)100%);
-            background-clip:content-box;
-            opacity: 2;
-            transition: opacity 1500ms;
-        }
-    }
-    .initial-heart{
-        position: absolute;
-        right:20px;
-        z-index: 2;
-        color: red;
-        &:hover{
-        z-index: -2;
-        color:blue;
-    }
-    }*/
 }

@@ -1,0 +1,6 @@
+@mixin mobile-only {
+    @media screen and (min-width: map-get($breakpoints , mobile)){
+        
+    }
+    
+}

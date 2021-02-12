@@ -36,13 +36,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 1.1em;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
 }
 
 body {
   background: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 /*  IMAGES  */
@@ -66,6 +66,7 @@ header .fa-arrow-left {
   margin-right: 70px;
   /*temporaire car pas responsive*/
   color: #353535;
+  font-size: 1.3em;
 }
 header .fa-arrow-left:hover {
   background: linear-gradient(to bottom right, #FF79DA 10%, #9656DC 70%, #9656DC 50%);
@@ -76,7 +77,7 @@ header .fa-arrow-left:hover {
 }
 header h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.3em;
+  font-size: 2rem;
 }
 
 footer {
@@ -89,15 +90,12 @@ footer h2 {
   font-family: Shrikhand;
   color: white;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 footer nav {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-}
-footer nav span {
-  font-size: 1em;
 }
 footer nav i {
   color: white;
@@ -107,7 +105,7 @@ footer nav i {
 footer nav a {
   text-decoration: none;
   color: white;
-  font-size: 0.8em;
+  font-size: 1.2em;
 }
 footer nav a:hover {
   background: linear-gradient(to bottom right, #FF79DA 10%, #9656DC 70%, #9656DC 50%);
@@ -133,31 +131,12 @@ footer nav a {
 .main-container__Title {
   display: flex;
   justify-content: space-between;
-  /*.favorite{
-
-      position: relative;
-      z-index: 1;
-      color:$Color-main;
-      &:hover{
-          background: radial-gradient(circle, lighten($Color-secondary, 5)0%, darken($Color-primary,10)100%);
-          background-clip:content-box;
-          opacity: 2;
-          transition: opacity 1500ms;
-      }
-  }
-  .initial-heart{
-      position: absolute;
-      right:20px;
-      z-index: 2;
-      color: red;
-      &:hover{
-      z-index: -2;
-      color:blue;
-  }
-  }*/
 }
 .main-container__Title h1 {
   font-family: "Shrikhand";
+}
+.main-container__Title .fa-heart {
+  font-size: 1.6rem;
 }
 .main-container__Title .basic {
   z-index: 1;
@@ -193,7 +172,6 @@ footer nav a {
 }
 .items .border h2 {
   text-transform: uppercase;
-  font-size: 0.9em;
   font-weight: lighter;
   padding-bottom: 5px;
   padding-top: 35px;
@@ -237,29 +215,33 @@ footer nav a {
   animation: landing-menu 5s 1s ease-in 1;
 }
 
+.tenth {
+  animation: landing-menu 5.5s 1s ease-in 1;
+}
+
 .items__choice {
   border-radius: 20px;
   background-color: white;
   margin: 15px auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
-  /*:hover > .Items__choice__animation{
-      width: 50px;
-      background: brown;
-  }                               marche pas donc écrit plus bas*/
+  overflow: hidden;
 }
 .items__choice__text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 10px;
+  flex-grow: 1;
+  max-width: 70%;
 }
 .items__choice__text h3 {
-  font-size: 0.5em;
+  font-size: 1.1em;
 }
 .items__choice__text h4 {
-  font-size: 0.45em;
+  font-size: 1em;
   font-weight: lighter;
 }
 .items__choice__text h3,
@@ -267,56 +249,43 @@ footer nav a {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 250px;
 }
 .items__choice__price {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  flex-grow: 4;
-  margin-right: 20px;
+  flex-grow: 1;
   padding: 10px;
+  align-self: stretch;
 }
 .items__choice__price p {
-  font-size: 0.5em;
+  font-size: 1em;
   font-weight: bold;
 }
 .items__choice__animation {
-  transition: width 700ms ease-in-out, color 300ms ease-in-out, background 300ms ease-in;
-  transition-delay: 0s, 700ms, 300ms;
-  width: 0px;
-  /*span:hover{
-      background-color: $Color-tertiary;
-      border-radius: 0px 20px 20px 0px;
-      transform:scale(1);
-      display: flex;
-      justify-content: center;
-      width: 50px;
-  }*/
+  transition: all 500ms linear;
+  width: 0;
+  color: white;
+  background-color: #99E2D0;
+  text-align: center;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .items__choice__animation span {
-  background: #99E2D0;
-}
-.items__choice__animation .fa-check-circle {
-  width: 0;
-  color: transparent;
-  transition: transform 1s ease-out;
-  transform-origin: center;
-  /*animation: rotate 2s 0 ease-out; problème marche pas*/
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: rotate(180deg);
+  font-size: 1.5em;
 }
 
 .items__choice:hover > .items__choice__animation {
   width: 50px;
-  background: #99E2D0;
-  background-clip: text;
-  color: white;
-  border-radius: 0px 20px 20px 0px;
 }
-.items__choice:hover > .items__choice__animation .fa-check-circle {
-  color: white;
-  padding-left: 5px;
-  padding-top: 10px;
-  transform: rotate(360deg);
+.items__choice:hover > .items__choice__animation span {
+  opacity: 1;
+  transform: rotate(0deg);
 }
 
 .purchase__button {
@@ -328,7 +297,7 @@ footer nav a {
   margin: 30px auto 0px auto;
   display: flex;
   justify-content: center;
-  font-size: 0.9em;
+  font-size: 1rem;
   box-shadow: 3px 5px 5px grey;
 }
 .purchase__button:hover {

@@ -6,16 +6,18 @@ header{
     .fa-arrow-left{
        margin-right: 70px; /*temporaire car pas responsive*/
        color: #353535;
+       font-size: 1.3em;
        &:hover{
         background: linear-gradient(to bottom right, $Color-secondary 10%, $Color-primary 70%, $Color-primary 50%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         color: transparent;
+        
         }
     }
     h1{
         font-family: 'Shrikhand', sans-serif;
-        font-size: 1.3em;
+        font-size: 2rem;
     }
 }

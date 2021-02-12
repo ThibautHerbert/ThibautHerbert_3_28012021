@@ -5,7 +5,6 @@
 
     h2{
         text-transform: uppercase;
-        font-size: .9em;
         font-weight: lighter;
         padding-bottom: 5px;
         padding-top: 35px;
@@ -41,27 +40,31 @@
 .nineth{
     animation: landing-menu 5s 1s ease-in 1 ;
 }
+.tenth{
+    animation: landing-menu 5.5s 1s ease-in 1 ;
+}
 .items__choice{
     border-radius: 20px;
     background-color: white;
     margin: 15px auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     cursor: pointer;
-    /*:hover > .Items__choice__animation{
-        width: 50px;
-        background: brown;
-    }                               marche pas donc écrit plus bas*/
+    overflow: hidden;
+    
     &__text{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         padding: 10px;
+        flex-grow: 1;
+        max-width: 70%;
             h3{
-                font-size: .5em;
+                font-size: 1.1em;
             }
             h4{
-                font-size: .45em;
+                font-size: 1em;
                 font-weight: lighter;
             }
             h3,
@@ -69,61 +72,45 @@
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;
-                width: 250px;
             }
     }
     &__price{
         display: flex;
         flex-direction: column-reverse;
         align-items: flex-end;
-        flex-grow: 4;
-        margin-right: 20px;
+        flex-grow: 1;
         padding: 10px;
+        align-self: stretch;
         p{
-            font-size: .5em;
+            font-size: 1em;
             font-weight: bold;
         }
     }
     &__animation{
-        transition: width 700ms ease-in-out, color 300ms ease-in-out, background 300ms ease-in;
-        transition-delay: 0s, 700ms, 300ms;
-        width: 0px;
-        span{
-            background: $Color-tertiary;
-        }
-        .fa-check-circle{
-            width: 0;
-            color: transparent;
-            transition: transform 1s ease-out;
-            transform-origin: center;
-            /*animation: rotate 2s 0 ease-out; problème marche pas*/
-   
-    }
-    /*span:hover{
+        transition: all 500ms linear;
+        width: 0;
+        color: white;
         background-color: $Color-tertiary;
-        border-radius: 0px 20px 20px 0px;
-        transform:scale(1);
+        text-align: center;
+        align-self: stretch;
         display: flex;
+        align-items: center;
         justify-content: center;
-        width: 50px;
-    }*/ 
-}
+        span{
+            opacity: 0;
+            transition: all 500ms linear;
+            transform: rotate(180deg);
+            font-size: 1.5em;
+        }
+    }
 }
 .items__choice:hover > .items__choice__animation{
     width: 50px;
-    background: $Color-tertiary;
-    background-clip: text;
-    color: white;
-    border-radius: 0px 20px 20px 0px;
+    
     span{
-        
+        opacity: 1;
+        transform: rotate(0deg);
     }
-    .fa-check-circle{
-        color: white;
-        padding-left: 5px;
-        padding-top: 10px;
-        transform:rotate(360deg);   
-}
-}
+    
 
-
+}
