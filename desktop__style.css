@@ -63,5 +63,16 @@
     footer nav{
         flex-direction: row;
         justify-content: space-around;
+        margin-top: 10px;
     }
+    footer span{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+       
+    }
+    footer nav span,
+    nav a{
+    	margin-top: 0px;
+}
 }

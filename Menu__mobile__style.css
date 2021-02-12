@@ -52,6 +52,11 @@ body {
   object-fit: cover;
   object-position: 50% 90%;
 }
+@media screen and (min-width: 767px) {
+  .img__top {
+    object-position: 50% 55%;
+  }
+}
 
 .--position {
   object-position: 50% 45%;
@@ -164,6 +169,19 @@ footer nav a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1);
+}
+
+.small-container {
+  /*@include tablet-only{
+      width: fit-content;
+      /* règler le padding: 0; mais sur le bloc main-container*/
+  /*}*/
+}
+@media screen and (min-width: 767px) {
+  .small-container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .items .border {

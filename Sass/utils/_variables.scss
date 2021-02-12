@@ -4,4 +4,6 @@ $Color-tertiary:#99E2D0;
 $Color-main:#f6f6f6;
 
 $breakpoints:(
-    mobile:767px);
+    desktop:767px,
+    tablet-min:768px,
+    tablet-max:1280px);

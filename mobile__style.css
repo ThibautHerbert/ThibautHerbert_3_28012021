@@ -137,8 +137,6 @@ body{
     	
     	font-family: Roboto, calibri, sans-serif;
     }
-    
-    /*faire une mixin avec display flex, justify content center*/
     								/*  HEADER  */
     header{
         padding: 15px;
@@ -202,12 +200,9 @@ body{
         font-size: .8em;
         box-shadow:1px 3px 5px grey;
     }
-    .explore input:hover{
-        background: var(--Color-secondary);
-        box-shadow:1px 3px 5px #353535;
-    }
-    ::-webkit-input-placeholder{
-        
+    .explore input:hover{                           /*problème*/
+        background: #ff7edb;
+        box-shadow: 1px 3px 5px #353535;
     }
     								/*  STEPS FONCTIONNEMENT  */
     .steps{

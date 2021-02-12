@@ -47,3 +47,13 @@
         }
     }
 }
+.small-container{
+    @include desktop-only{
+        display: flex;
+        justify-content: space-around;
+    }
+    /*@include tablet-only{
+        width: fit-content;
+        /* règler le padding: 0; mais sur le bloc main-container*/
+    /*}*/
+}

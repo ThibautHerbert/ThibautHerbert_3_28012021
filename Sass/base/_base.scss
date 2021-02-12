@@ -29,6 +29,9 @@ body{
 	width: 100%;
 	object-fit: cover;
 	object-position: 50% 90%;
+    @include desktop-only{
+        object-position: 50% 55%;
+    }
 }
 .--position{
     object-position: 50% 45%;
