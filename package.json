@@ -1,0 +1,19 @@
+{
+  "name": "thibautherbert_3_28012021",
+  "version": "1.0.0",
+  "description": "Dynamisez une page web avec des animations CSS Scénario : Ohmyfood! est une entreprise de commande de repas en ligne qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThibautHerbert/ThibautHerbert_3_28012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThibautHerbert/ThibautHerbert_3_28012021/issues"
+  },
+  "homepage": "https://github.com/ThibautHerbert/ThibautHerbert_3_28012021#readme"
+}

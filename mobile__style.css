@@ -11,9 +11,6 @@
     font-style: normal;
 }
 
-.FontH2{
-   
-}
 body{
     --Color-primary:#9656DC;
     --Color-secondary:#FF79DA;
@@ -53,15 +50,15 @@ body{
     }
        								/*  TOP LOCALISATION  */
     header,
-    .Localisation{
+    .localisation{
     	 /*marche pas pour localisation*/
     }
-    .Localisation{
+    .localisation{
         padding: 15px 0px;
         display: flex;
         justify-content: center;
     }
-    .Localisation i{
+    .localisation i{
         
     }
     ::-webkit-input-placeholder{ /* chrome */
@@ -69,18 +66,18 @@ body{
     font-weight: bold;
     font-size: .7em;
 }
-    .Localisation,
-    .Localisation input{
+    .localisation,
+    .localisation input{
     	background-color: #eaeaea;
     }
-    .Localisation input{
+    .localisation input{
         border:none;
         text-align: center;
         border: turquoise solid 3px;
         
     }
        								/*  EXPLORE  */       								
-    .Explore{
+    .explore{
     	background-color: var(--Color-main);
     	display: flex;
     	flex-direction: column;
@@ -89,18 +86,18 @@ body{
     	padding: 20px;
         text-align: center;
     }
-    .Explore h1{
+    .explore h1{
     	width: 80%;
         padding-top: 30px;
         padding-bottom: 20px;
         font-size: 1.2em;
 
     }
-    .Explore p{
+    .explore p{
         padding-bottom: 40px;
         font-size: .8em;
     }
-    .Explore input{
+    .explore input{
     	background: linear-gradient(to bottom right, var(--Color-secondary) 10%, var(--Color-primary) 70%, var(--Color-primary) 50%);
         border-radius: 40px;
         border:none;
@@ -110,7 +107,7 @@ body{
         font-size: .8em;
         box-shadow:1px 3px 5px grey;
     }
-    .Explore input:hover{
+    .explore input:hover{
         background: var(--Color-secondary);
         box-shadow:1px 3px 5px #353535;
     }
@@ -118,10 +115,10 @@ body{
         
     }
     								/*  STEPS FONCTIONNEMENT  */
-    .Steps{
+    .steps{
         padding: 40px 20px;
     }
-    .Steps h2{
+    .steps h2{
     	font-size: 1.2em;
         font-weight: bold;
         padding-bottom: 30px;
@@ -236,7 +233,7 @@ body{
     }
     .basic:hover{
         color: transparent;
-        scale: (.2);
+        transform: scale(.2);
     }
     /*.fa-heart:hover{
         z-index:1;

@@ -1,9 +1,9 @@
-.Items{
+.items{
     .border{
         border-bottom: $Color-tertiary solid 3px;
         width: 15%;
 
-        h2{
+    h2{
         text-transform: uppercase;
         font-size: .9em;
         font-weight: lighter;
@@ -13,6 +13,7 @@
         }
     }
 }
+                                /* animation saccadée  */
 .first{
     animation: landing-menu .5s 1s ease-in 1 ;
 }
@@ -40,8 +41,7 @@
 .nineth{
     animation: landing-menu 5s 1s ease-in 1 ;
 }
-.Items__choice{
-    
+.items__choice{
     border-radius: 20px;
     background-color: white;
     margin: 15px auto;
@@ -86,13 +86,10 @@
     }
     &__animation{
         transition: width 700ms ease-in-out, color 300ms ease-in-out, background 300ms ease-in;
-        transition-delay: 0, 700ms, 300ms;
+        transition-delay: 0s, 700ms, 300ms;
         width: 0px;
-        
-        
         span{
             background: $Color-tertiary;
-            
         }
         .fa-check-circle{
             width: 0;
@@ -100,8 +97,7 @@
             transition: transform 1s ease-out;
             transform-origin: center;
             /*animation: rotate 2s 0 ease-out; problème marche pas*/
-           
-            
+   
     }
     /*span:hover{
         background-color: $Color-tertiary;
@@ -110,13 +106,10 @@
         display: flex;
         justify-content: center;
         width: 50px;
-    }*/
-   
-        
+    }*/ 
 }
-
 }
-.Items__choice:hover > .Items__choice__animation{
+.items__choice:hover > .items__choice__animation{
     width: 50px;
     background: $Color-tertiary;
     background-clip: text;
@@ -129,9 +122,7 @@
         color: white;
         padding-left: 5px;
         padding-top: 10px;
-        transform:rotate(360deg);
-        
-        
+        transform:rotate(360deg);   
 }
 }
 

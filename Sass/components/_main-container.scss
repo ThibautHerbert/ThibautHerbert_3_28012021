@@ -18,11 +18,12 @@
         z-index: 1;
         transition: all 700ms ease-in-out;
         transition-delay: 400ms;
-        scale: (.9);
-    }
-    .basic:hover{
+        transform: scale(.9);
+    
+        &:hover{
         color: transparent;
-        scale: (.2);
+        transform: scale(.2);
+        }
     }
     .favorite{
         color:transparent;
@@ -32,13 +33,15 @@
         right: 20px;
         z-index: 1;
         cursor: pointer;
-    }
-    .favorite:hover{
+        
+        &:hover{
         background: linear-gradient(to bottom right, $Color-secondary 10%, $Color-primary 70%, $Color-primary 50%);
         background-clip: text;
         color: transparent;
-        transform: scale(1);
-        
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent;
+        transform: scale(1); 
+        }
     }
     /*.favorite{
         

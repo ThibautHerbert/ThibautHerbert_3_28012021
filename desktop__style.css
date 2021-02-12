@@ -3,11 +3,11 @@
     
     
                                         /*  EXPLORE  */ 
-    .Explore{
+    .explore{
         
     }
                                         /*  STEPS FONCTIONNEMENT  */
-    .Steps{
+    .steps{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -15,16 +15,16 @@
         width: 100%;
         position: relative;
     }
-    .Steps__items{
+    .steps__items{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
     .steps--icons{                  /*à renommer correctement*/
         padding: 30px 50px 30px 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 50%;
+        max-width: 350px;
         margin: 10px 30px;
         position: relative;
         text-align: center;
@@ -45,7 +45,7 @@
         padding:0 10%;
     }
                                         /*  MAIN CONTENT  */
-    section .Restaurants-Block__container{
+    section .restaurants-block__container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
