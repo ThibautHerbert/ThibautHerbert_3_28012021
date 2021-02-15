@@ -52,7 +52,7 @@ body {
   object-fit: cover;
   object-position: 50% 90%;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1024px) {
   .img__top {
     object-position: 50% 55%;
   }
@@ -68,10 +68,14 @@ header {
   justify-content: flex-start;
 }
 header .fa-arrow-left {
-  margin-right: 70px;
-  /*temporaire car pas responsive*/
+  margin-right: 5rem;
   color: #353535;
   font-size: 1.3em;
+}
+@media screen and (max-width: 374px) {
+  header .fa-arrow-left {
+    margin-right: 3rem;
+  }
 }
 header .fa-arrow-left:hover {
   background: linear-gradient(to bottom right, #FF79DA 10%, #9656DC 70%, #9656DC 50%);
@@ -140,6 +144,11 @@ footer nav a {
 .main-container__Title h1 {
   font-family: "Shrikhand";
 }
+@media screen and (max-width: 374px) {
+  .main-container__Title h1 {
+    font-size: 1.4rem;
+  }
+}
 .main-container__Title .fa-heart {
   font-size: 1.6rem;
 }
@@ -177,7 +186,7 @@ footer nav a {
       /* règler le padding: 0; mais sur le bloc main-container*/
   /*}*/
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1024px) {
   .small-container {
     display: flex;
     justify-content: space-around;
@@ -197,44 +206,44 @@ footer nav a {
 }
 
 /* animation saccadée  */
-.first {
+.landing-1 {
   animation: landing-menu 0.5s 1s ease-in 1;
 }
 
-.second {
+.landing-2 {
   animation: landing-menu 1s 1s ease-in 1;
 }
 
-.third {
+.landing-3 {
   animation: landing-menu 1.5s 1s ease-in 1;
 }
 
-.fourth {
+.landing-4 {
   animation: landing-menu 2s 1s ease-in 1;
 }
 
-.fifth {
+.landing-5 {
   animation: landing-menu 2.5s 1s ease-in 1;
 }
 
-.sixth {
+.landing-6 {
   animation: landing-menu 3s 1s ease-in 1;
 }
 
-.seventh {
+.landing-7 {
   animation: landing-menu 3.5s 1s ease-in 1;
 }
 
-.eighth {
+.landing-8 {
+  animation: landing-menu 4s 1s ease-in 1;
+}
+
+.landing-9 {
   animation: landing-menu 4.5s 1s ease-in 1;
 }
 
-.nineth {
+.landing-10 {
   animation: landing-menu 5s 1s ease-in 1;
-}
-
-.tenth {
-  animation: landing-menu 5.5s 1s ease-in 1;
 }
 
 .items__choice {

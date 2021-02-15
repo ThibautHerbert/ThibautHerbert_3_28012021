@@ -13,36 +13,11 @@
     }
 }
                                 /* animation saccadée  */
-.first{
-    animation: landing-menu .5s 1s ease-in 1 ;
-}
-.second{
-    animation: landing-menu 1s 1s ease-in 1 ;
-}
-.third{
-    animation: landing-menu 1.5s 1s ease-in 1 ;
-}
-.fourth{
-    animation: landing-menu 2s 1s ease-in 1 ;
-}
-.fifth{
-    animation: landing-menu 2.5s 1s ease-in 1 ;
-}
-.sixth{
-    animation: landing-menu 3s 1s ease-in 1 ;
-}
-.seventh{
-    animation: landing-menu 3.5s 1s ease-in 1 ;
-}
-.eighth{
-    animation: landing-menu 4.5s 1s ease-in 1 ;
-}
-.nineth{
-    animation: landing-menu 5s 1s ease-in 1 ;
-}
-.tenth{
-    animation: landing-menu 5.5s 1s ease-in 1 ;
-}
+    @for $i from 1 through 10{
+         .landing-#{$i} {
+             animation: landing-menu ($i*.5s) 1s ease-in 1 ; 
+            }
+    }
 .items__choice{
     border-radius: 20px;
     background-color: white;

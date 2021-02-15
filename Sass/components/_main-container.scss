@@ -13,6 +13,9 @@
     
     h1{
         font-family:'Shrikhand';
+        @include minimobile-only{
+            font-size: 1.4rem;
+        }
     }
     .fa-heart{
         font-size: 1.6rem;

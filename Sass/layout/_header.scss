@@ -4,7 +4,10 @@ header{
     justify-content: flex-start;
     
     .fa-arrow-left{
-       margin-right: 70px; /*temporaire car pas responsive*/
+       margin-right: 5rem;
+       @include minimobile-only{
+           margin-right: 3rem;
+       }
        color: #353535;
        font-size: 1.3em;
        &:hover{
@@ -19,5 +22,6 @@ header{
     h1{
         font-family: 'Shrikhand', sans-serif;
         font-size: 2rem;
+        
     }
 }
