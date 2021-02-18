@@ -125,6 +125,9 @@ body{
         opacity: 1;
     }
 }
+.wrapper{
+    animation: hidden 3s 0s both;
+}
 
                                 /* Mesures générales*/   
 	*{
@@ -153,7 +156,7 @@ body{
     }
        								/*  TOP LOCALISATION  */
     .localisation{
-        padding: 15px 0px;
+        padding: 15px 15%;
         display: flex;
         justify-content: center;
     }
@@ -169,6 +172,7 @@ body{
     .localisation input{
         border:none;
         text-align: center;
+        width: 100%;
     }
        								/*  EXPLORE  */       								
     .explore{
@@ -181,14 +185,15 @@ body{
         text-align: center;
     }
     .explore h1{
-    	width: 80%;
+    	
         padding-top: 30px;
         padding-bottom: 20px;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .explore p{
         padding-bottom: 40px;
-        font-size: .8em;
+        font-size: .7em;
+        color: #353535;
     }
     .explore input{
     	/*background: linear-gradient(to bottom right, var(--Color-secondary) 10%, var(--Color-primary) 70%, var(--Color-primary) 50%);*/
@@ -208,7 +213,7 @@ body{
     								/*  STEPS FONCTIONNEMENT  */
     .steps{
         padding: 40px 20px;
-        animation: hidden 3s 0s both;
+        /*animation: hidden 3s 0s both;*/
     }
     .steps h2{
     	font-size: 1.2em;
@@ -216,7 +221,7 @@ body{
         padding-bottom: 30px;
     }
     .steps--icons{                  /*à renommer correctement*/
-        padding: 30px 50px 30px 20px;
+        padding: 30px 30px 30px 40px;
         background-color: var(--Color-main);
         border-radius: 30px;
         display: flex;
@@ -224,7 +229,7 @@ body{
         align-content: space-around;
         margin-bottom: 50px;
         box-shadow: 5px 5px 10px 0px #9A9A91;
-        font-size: .8em;
+        font-size: .7em;
         font-weight: bold;
     }
     .steps--icons:hover{ 
@@ -281,7 +286,7 @@ body{
 		margin-bottom: 20px;
 		position: relative;
         box-shadow: 5px 5px 10px 0px #9A9A91;
-        animation: hidden 3s 0s both;
+        /*animation: hidden 3s 0s both;*/
 	}
     .item__body{
         margin: 0;
@@ -395,7 +400,7 @@ body{
 @media screen and (max-width : 374px){
                                      /* STEPS */
     .steps--icons{
-        padding: 30px 50px 30px 70px;
+        padding: 30px 50px 30px 50px;
         font-size: .7em;
     } 
     .steps--icons .fas{
@@ -407,6 +412,12 @@ body{
         align-self: center;
     }
                                     /* MAIN CONTENT */
+    section h3{
+		font-size: .6em;
+	}
+	section h4{
+		font-size: .5em;
+	}
     .basic,
     .favorite{
             right: 20px;
