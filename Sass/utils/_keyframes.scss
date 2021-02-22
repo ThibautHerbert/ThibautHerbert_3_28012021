@@ -17,3 +17,14 @@
         transform: rotate(360deg);
     }
 }
+@keyframes favorite{
+    0%{
+        transform: scale(.2);
+    }
+    70%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

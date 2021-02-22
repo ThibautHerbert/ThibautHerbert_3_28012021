@@ -5,7 +5,6 @@
     background-color: $Color-main;
     position: relative;
     bottom: 50px;
-    
 }
 .main-container__Title{
     display: flex;
@@ -33,8 +32,6 @@
     }
     .favorite{
         color:transparent;
-        transition: all 400ms ease-in-out;
-        transform: scale(0.2);
         position: absolute;
         right: 20px;
         z-index: 1;
@@ -46,7 +43,7 @@
         color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
-        transform: scale(1); 
+        animation: favorite 400ms 1 ease-out forwards;
         }
     }
 }
@@ -55,8 +52,8 @@
         display: flex;
         justify-content: space-around;
     }
-    /*@include tablet-only{
-        width: fit-content;
-        /* règler le padding: 0; mais sur le bloc main-container*/
-    /*}*/
+    @include tablet--horizontal-only{
+        display: flex;
+        justify-content: space-around;
+    }
 }

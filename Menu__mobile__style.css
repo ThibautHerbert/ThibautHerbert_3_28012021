@@ -18,16 +18,27 @@
     transform: rotate(360deg);
   }
 }
+@keyframes favorite {
+  0% {
+    transform: scale(0.2);
+  }
+  70% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*  FONTS  */
 @font-face {
   font-family: "Roboto";
-  src: url("Roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("Police/Roboto/Roboto-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Shrikhand";
-  src: url("Shrikhand/Shrikhand-Regular.ttf") format("truetype");
+  src: url("Police/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -52,7 +63,7 @@ body {
   object-fit: cover;
   object-position: 50% 90%;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .img__top {
     object-position: 50% 55%;
   }
@@ -164,8 +175,6 @@ footer nav a {
 }
 .main-container__Title .favorite {
   color: transparent;
-  transition: all 400ms ease-in-out;
-  transform: scale(0.2);
   position: absolute;
   right: 20px;
   z-index: 1;
@@ -177,16 +186,16 @@ footer nav a {
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1);
+  animation: favorite 400ms 1 ease-out forwards;
 }
 
-.small-container {
-  /*@include tablet-only{
-      width: fit-content;
-      /* règler le padding: 0; mais sur le bloc main-container*/
-  /*}*/
+@media screen and (min-width: 1280px) {
+  .small-container {
+    display: flex;
+    justify-content: space-around;
+  }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .small-container {
     display: flex;
     justify-content: space-around;
@@ -256,6 +265,16 @@ footer nav a {
   cursor: pointer;
   overflow: hidden;
 }
+@media screen and (min-width: 1280px) {
+  .items__choice {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .items__choice {
+    width: 300px;
+  }
+}
 .items__choice__text {
   display: flex;
   flex-direction: column;
@@ -263,6 +282,18 @@ footer nav a {
   padding: 10px;
   flex-grow: 1;
   max-width: 70%;
+}
+@media screen and (min-width: 1280px) {
+  .items__choice__text {
+    min-width: 50%;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .items__choice__text {
+    min-width: 70%;
+    max-width: 100%;
+  }
 }
 .items__choice__text h3 {
   font-size: 1.1em;

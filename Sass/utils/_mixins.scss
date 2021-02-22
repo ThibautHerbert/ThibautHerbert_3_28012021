@@ -13,3 +13,8 @@
         @content;
     }
 }
+@mixin tablet--horizontal-only{
+    @media screen and (min-width: map-get($breakpoints,tablet-max)) and (max-width: map-get($breakpoints, bigtablet-max)){
+        @content;
+    }
+}

@@ -1,12 +1,12 @@
 @font-face{
     font-family: 'Roboto';
-    src: url('Roboto/Roboto-Regular.ttf') format('truetype');
+    src: url('Police/Roboto/Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
     font-family: 'Shrikhand';
-    src: url('Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+    src: url('Police/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -333,15 +333,24 @@ body{
         color: transparent;
         transform: scale(.2);
     }
+    @keyframes favorite{
+        0%{
+            transform: scale(.2);
+        }
+        70%{
+            transform: scale(.8);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
     .favorite{
         color: transparent;
-        transform: scale(.2);
-        transition: all 800ms ease-in-out;
     }
     .favorite:hover{
         /*background: linear-gradient(to bottom right, var(--Color-secondary) 10%, var(--Color-primary) 70%, var(--Color-primary) 50%);*/
         background: linear-gradient(to bottom right, #FF79DA 10%, #9656DC 70%, #9656DC 50%);
-        transform: scale(1);
+        animation: favorite 400ms 1 ease-out forwards;
         -webkit-background-clip: text;
         -webkit-text-fill-color:transparent;
         color: transparent;

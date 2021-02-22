@@ -27,6 +27,12 @@
     align-items: center;
     cursor: pointer;
     overflow: hidden;
+    @include desktop-only{
+        width: 350px; 
+    }
+    @include tablet--horizontal-only{
+        width: 300px;
+    }
     
     &__text{
         display: flex;
@@ -35,6 +41,14 @@
         padding: 10px;
         flex-grow: 1;
         max-width: 70%;
+        @include desktop-only{
+            min-width: 50%;
+            max-width: 100%;
+        }
+        @include tablet--horizontal-only{
+            min-width: 70%;
+            max-width: 100%;
+        }
             h3{
                 font-size: 1.1em;
             }
@@ -86,6 +100,4 @@
         opacity: 1;
         transform: rotate(0deg);
     }
-    
-
 }
